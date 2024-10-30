@@ -28,14 +28,14 @@ The company wants to know:
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+We can see our best fitted line to be :
+$$cnt = 0.2*const + 0.23*yr + 0.047*workingday + 0.46*atemp - 0.088*hum - 0.11*season\_spring $$
+$$+ 0.073*season\_winter - 0.04*mnth\_jan - 0.06*mnth\_nov + 0.07*mnth\_sep - 0.05*weathersit\_cloudy$$ 
+$$- 0.246*weathersit\_lightRain$$
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+The above variables are significant with an adjusted r-squared value of **0.837**. It has Prob (F-statistic) equal to 5.65e-186 which implies that the fitted line is significant.
 
-
+After running the model through the test data set, we get a r-squared value of **0.79** which is close to our training R-Squared. It shows that our model is generic enough.
 ## Technologies Used
 - Python, Jupyter, Pandas, Numpy, matplotlib, seaborn, sklearn, statsmodels
 
